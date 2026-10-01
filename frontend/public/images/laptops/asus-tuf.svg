@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="100%" height="100%">
+  <defs>
+    <filter id="shadow_asus-tuf" x="-10%" y="-10%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="chassisGrad_asus-tuf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#27272a"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <linearGradient id="baseGrad_asus-tuf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#27272a"/>
+      <stop offset="60%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="screenWall_asus-tuf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="50%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="glassReflection_asus-tuf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="kbGlow_asus-tuf" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#fde68a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="300" cy="385" rx="230" ry="16" fill="#0f172a" opacity="0.2" filter="blur(6px)"/>
+
+  <g filter="url(#shadow_asus-tuf)">
+    <rect x="85" y="35" width="430" height="260" rx="14" fill="url(#chassisGrad_asus-tuf)" stroke="#334155" stroke-width="1.5"/>
+    <rect x="92" y="42" width="416" height="246" rx="8" fill="#09090b"/>
+    <circle cx="300" cy="48" r="2.5" fill="#1e293b"/>
+    <circle cx="300" cy="48" r="1.2" fill="#0284c7"/>
+    
+    <rect x="96" y="54" width="408" height="224" rx="4" fill="url(#screenWall_asus-tuf)"/>
+    <g opacity="0.35">
+      <circle cx="200" cy="140" r="80" fill="#ffffff" filter="blur(30px)"/>
+      <circle cx="400" cy="180" r="90" fill="#f59e0b" filter="blur(40px)"/>
+      <path d="M 96 220 Q 250 120 504 180 L 504 278 L 96 278 Z" fill="#000000" opacity="0.4"/>
+      <path d="M 96 240 Q 320 160 504 220 L 504 278 L 96 278 Z" fill="#ffffff" opacity="0.15"/>
+    </g>
+    <path d="M 96 54 L 260 54 L 140 278 L 96 278 Z" fill="url(#glassReflection_asus-tuf)"/>
+    <text x="300" y="284" font-family="'Open Sans', sans-serif" font-size="7.5" font-weight="800" fill="#fde68a" text-anchor="middle" letter-spacing="1.5" opacity="0.85">
+      TUF GAMING
+    </text>
+  </g>
+
+  <rect x="180" y="294" width="240" height="7" rx="3" fill="#0f172a" stroke="#334155" stroke-width="0.8"/>
+
+  <g>
+    <polygon points="50,370 550,370 514,298 86,298" fill="url(#baseGrad_asus-tuf)" stroke="#475569" stroke-width="1.2"/>
+    <rect x="50" y="370" width="500" height="8" rx="3" fill="#09090b" stroke="#334155" stroke-width="0.8"/>
+    <rect x="270" y="370" width="60" height="3" rx="1.5" fill="#334155"/>
+    <polygon points="108,348 492,348 474,304 126,304" fill="#09090b" opacity="0.8" stroke="#1e293b" stroke-width="0.8"/>
+
+    <rect x="132" y="306" width="336" height="5" rx="1" fill="#1e293b" opacity="0.9"/>
+    <rect x="128" y="313" width="344" height="6" rx="1" fill="#1e293b" opacity="0.9"/>
+    <rect x="124" y="321" width="352" height="6.5" rx="1" fill="#1e293b" opacity="0.9"/>
+    <rect x="120" y="329.5" width="360" height="7" rx="1" fill="#1e293b" opacity="0.9"/>
+    <rect x="116" y="338.5" width="368" height="7.5" rx="1" fill="#1e293b" opacity="0.9"/>
+
+    
+    <rect x="115" y="347" width="370" height="2" fill="url(#kbGlow_asus-tuf)" opacity="0.9"/>
+    <rect x="148" y="321" width="24" height="6.5" rx="1" fill="#f59e0b" opacity="0.8"/>
+    
+
+    
+
+    <rect x="250" y="352" width="100" height="20" rx="3" fill="#1e293b" stroke="#475569" stroke-width="0.8" opacity="0.85"/>
+    <line x1="300" y1="368" x2="300" y2="371" stroke="#64748b" stroke-width="0.8"/>
+  </g>
+
+  <g transform="translate(480, 20)">
+    <rect x="0" y="0" width="105" height="24" rx="6" fill="#0f172a" fill-opacity="0.85" stroke="#334155" stroke-width="1"/>
+    <text x="52" y="16" font-family="'Open Sans', sans-serif" font-size="9" font-weight="700" fill="#f8fafc" text-anchor="middle">
+      TUF Gaming A15
+    </text>
+  </g>
+</svg>

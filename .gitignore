@@ -1,0 +1,61 @@
+# ==========================================
+# Dokumentasi / Docs
+# ==========================================
+# Mengabaikan seluruh folder docs/
+docs/
+
+# File temporary Microsoft Office & cache (jika docs/ dibuka)
+~$*.docx
+~$*.xlsx
+~$*.pptx
+*.tmp
+*.temp
+
+# Catatan: Jika ingin tetap mentrack script & diagram di docs/ 
+# tetapi hanya mengabaikan file Word skripsi (.docx), ganti "docs/" di atas dengan:
+# docs/*.docx
+# docs/**/~$*.docx
+
+
+# ==========================================
+# Dependencies & Packages
+# ==========================================
+node_modules/
+*/node_modules/
+
+
+# ==========================================
+# Environment & Secrets
+# ==========================================
+.env
+.env.local
+.env.*.local
+*/.env
+
+
+# ==========================================
+# Production / Build Output
+# ==========================================
+dist/
+build/
+*/dist/
+
+
+# ==========================================
+# Logs & Debug
+# ==========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# ==========================================
+# Editor & OS Files
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
