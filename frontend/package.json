@@ -4,9 +4,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 3000",
+    "dev": "vite --host --port 5174",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tunnel": "cloudflared tunnel --protocol http2 --url http://localhost:5174"
   },
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.3.0",

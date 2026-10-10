@@ -452,10 +452,16 @@ async function runSeeding() {
   console.log(` SEEDING SUKSES: 100 PRODUK SKU LAPTOP LOKAL TERSIMPAN!`);
   console.log(`======================================================\n`);
 
-  await prisma.$disconnect();
 }
 
-runSeeding().catch(err => {
-  console.error('Seeding error:', err);
-  process.exit(1);
-});
+if (require.main === module) {
+  runSeeding()
+    .then(() => prisma.$disconnect())
+    .catch(err => {
+      console.error('Seeding error:', err);
+      process.exit(1);
+    });
+}
+
+module.exports = runSeeding;
+

@@ -1,20 +1,29 @@
 # ==========================================
-# Dokumentasi / Docs
+# Dokumentasi & Perencanaan Development
 # ==========================================
-# Mengabaikan seluruh folder docs/
+# Mengabaikan seluruh folder docs/ & berkas rancangan development
 docs/
+*.doc
+*.docx
+*.pdf
+*blueprint*.md
+*implementasi*.md
+*plan*.md
+spk_laptop_saw_blueprint.md
+**/spk_laptop_saw_blueprint.md
+frontend/spk_laptop_saw_blueprint.md
+implementasi_role_sales.md
 
-# File temporary Microsoft Office & cache (jika docs/ dibuka)
+# File temporary Microsoft Office & cache
 ~$*.docx
 ~$*.xlsx
 ~$*.pptx
 *.tmp
 *.temp
 
-# Catatan: Jika ingin tetap mentrack script & diagram di docs/ 
-# tetapi hanya mengabaikan file Word skripsi (.docx), ganti "docs/" di atas dengan:
-# docs/*.docx
-# docs/**/~$*.docx
+# Pengecualian: Pastikan README.md selalu ter-track
+!README.md
+!**/README.md
 
 
 # ==========================================

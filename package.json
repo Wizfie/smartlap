@@ -1,0 +1,14 @@
+{
+  "name": "smartlap",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SmartLap - SPK Pemilihan & Toko Laptop Berbasis Metode SAW",
+  "scripts": {
+    "dev:backend": "npm run --prefix backend dev",
+    "dev:frontend": "npm run --prefix frontend dev",
+    "seed": "npm run --prefix backend seed",
+    "tunnel": "cloudflared tunnel --protocol http2 --url http://localhost:5174",
+    "tunnel:frontend": "cloudflared tunnel --protocol http2 --url http://localhost:5174",
+    "tunnel:backend": "cloudflared tunnel --protocol http2 --url http://localhost:5001"
+  }
+}
